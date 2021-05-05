@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/media.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/grid.css"> -->
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-item menu_logo">
-            <div class="logo"> <img src="img/WD.png" alt="Grid"> </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/WD.png" alt="Grid"></a>
+            </div>
             <div class="menu">
                 <ul class="nav_menu">
-                    <li class="menu__list"><a href="#" class="menu__link"> ГЛАВНАЯ</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link"> ОБ АВТОРЕ</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link"> РАБОТЫ</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link"> ПРОЦЕСС</a></li>
-                    <li class="menu__list"><a href="#" class="menu__link"> КОНТАКТЫ</a></li>
+                    <li class="menu__list"><a href="index.html" class="menu__link">ГЛАВНАЯ</a></li>
+                    <li class="menu__list"><a href="#about_me" class="menu__link">ОБ АВТОРЕ</a></li>
+                    <li class="menu__list"><a href="#project" class="menu__link">РАБОТЫ</a></li>
+                    <li class="menu__list"><a href="#work" class="menu__link">ПРОЦЕСС</a></li>
+                    <li class="menu__list"><a href="#social" class="menu__link">КОНТАКТЫ</a></li>
                 </ul>
             </div>
             <div class="present">
-                <div class="img"> <img src="img/Frame.png" alt="Grid"> </div>
-                <div class="design">
+                <div class="present__img"> <img src="img/Frame.png" alt="Grid"> </div>
+                <div class="present__design">
                     <h1>Дизайн и верстка</h1>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         <nobr>вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов</nobr>
-                        на латинице с начала XVI века.
+                        <nobr>на латинице с начала XVI века.</nobr>
                     </p>
                     <button class="button button_write">Написать мне</button>
                 </div>
             </div>
         </div>
 
-        <div class="grid-item about_me">
+        <div class="grid-item about_me" id="about_me">
             <div class="text">
                 <h2> Обо мне </h2> 
                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -43,14 +46,14 @@
             </div>            
         </div>
 
-        <div class="grid-item project">
+        <div class="grid-item project" id="project">
             <div class="gallery">   
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->
-                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap"> <!-- <p class="col-1 p_project">40+ проектов</p> -->              
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
+                <img class="col-1 img_gallery" src="img/project.png" alt="Bootstrap">
             </div>
         </div>
 
@@ -62,18 +65,14 @@
                         Adobe Photoshop
                         <div class="line"></div>
                     </li>
-                    <!-- <li class="linia"></li> -->
-                    <!-- <li><div class="line"></div></li> -->
                     <li>
                         Adobe Photoshop
                         <div class="line"></div>
                     </li>
-                    <!-- <li><div class="line"></div></li> -->
                     <li>
                         Adobe Photoshop
                         <div class="line"></div>
                     </li>
-                    <!-- <li><div class="line"></div></li> -->
                 </ul>       
             </div>
             <div class="grid-item photo">
@@ -81,14 +80,12 @@
             </div>
         </div>
 
-        <div class="work">
-            <div class="video_title">
-                <h2>Как я работаю</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и 
-                <nobr>вэб-дизайне.</nobr> Lorem Ipsum является стандартной "рыбой" для 
-                текстов на латинице с начала XVI века.</p>
-            </div>
-
+        <div class="grid-item work" id="work">
+            <h2 class="video_title">Как я работаю</h2>
+            <p class="video_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и 
+            <nobr>вэб-дизайне.</nobr> Lorem Ipsum является стандартной "рыбой" для 
+            текстов на латинице с начала XVI века.
+            </p>
             <div class=video>
                 <iframe height="600px" width="1110px" src="http://www.youtube.com/embed/B223fBkhhzc?rel=0" allowfullscreen="" frameborder="0" poster="img/video_poster.png"></iframe>
             </div>
@@ -96,6 +93,22 @@
 
         <div class="grid-item task">
             <div class="task_img">
+                
+                <div class="row row2">
+                    <img src="img/notes.png" alt="notes">
+                    <div class="view">
+                        <img class="image2" src="img/laptop.png" alt="laptop">
+                    </div>
+                    <img src="img/notes.png" alt="notes">
+                    <img src="img/laptop.png" alt="laptop">
+                </div>
+                <div class="row">
+                    <img class="img1" src="img/laptop.png" alt="laptop">
+                    <img class="img2" src="img/notes.png" alt="notes">
+                    <img class="img3" src="img/laptop.png" alt="laptop">
+                    <img class="img4" src="img/notes.png" alt="notes">
+                </div>
+                <!--
                 <div class="row">
                     <img src="img/notes.png" alt="notes">
                     <img src="img/laptop.png" alt="laptop">
@@ -107,11 +120,12 @@
                     <img src="img/notes.png" alt="notes">
                     <img src="img/laptop.png" alt="laptop">
                     <img src="img/notes.png" alt="notes">
-                </div>
+                </div> 
+                -->
             </div> 
-            <div class="view"><img src="img/view.png" alt="eye"></div>          
+            <!-- <div class="view"><img src="img/view.png" alt="eye"></div> -->
         </div>
-
+    
         <div class="grid-item micro">
             <div class="micro_logo">
                 <img src="img/ms.png" alt="microsoft">
@@ -121,38 +135,35 @@
             </div>
         </div>
 
-        <div class="grid-item  form">
-            <form class="form_items">
-                <div class="form_items_text">
-                    <h2>Хотите веб-сайт?</h2>
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                        <nobr>вэб-дизайне.</nobr> Lorem Ipsum является стандартной "рыбой" для текстов
-                        на латинице с начала XVI века.
-                    </p>
-                </div>
-                <div class="form_items_fields">
-                    <div class="form_items_fields_inputs">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Ваш e-mail">
-                    </div>
-                    <textarea name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                    <button class="button btn_submit">ОТПРАВИТЬ</button>
-                </>
-            </form>
-        </div>
+       
+        <form class="grid-item form">
+            
+            <h2 class="form_item form_item__h2">Хотите веб-сайт?</h2>
+            <p class="form_item form_item__p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                <nobr>вэб-дизайне.</nobr> Lorem Ipsum является стандартной "рыбой" для текстов
+                на латинице с начала XVI века.
+            </p>
+            <div class="form_item__inputs">
+                <input class="form_items_fields_input field" type="text" placeholder="Ваше имя">
+                <input class="form_items_fields_input field" type="text" placeholder="Ваш e-mail">
+            </div>
+            <textarea class="form_items_fields_textarea filed" name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            
+            <button class="button btn_submit">ОТПРАВИТЬ</button>
+            
+        </form>
 
         <div class="grid-item copyright_social">
             <div class="copyright_social_text">
                 <h3>Иванов Иван</h3>
                 <p>(с) 2018. Все права защищены.</p>
             </div>
-            <div class="copyright_social_logo">
-                <img src="img/vk-social-network-logo.png" alt="vk-logo">
-                <img src="img/vk-social-network-logo.png" alt="vk-logo">
-                <img src="img/vk-social-network-logo.png" alt="vk-logo">
+            <div class="copyright_social_logo" id="social">
+                <a href="https://vk.com/"><img src="img/vk-social-network-logo.png" alt="vk-logo"></a>
+                <a href="https://vk.com/"><img src="img/vk-social-network-logo.png" alt="vk-logo"></a>
+                <a href="https://vk.com/"><img src="img/vk-social-network-logo.png" alt="vk-logo"></a>
             </div>
         </div>
-
     </div>
 </body>
 </html>

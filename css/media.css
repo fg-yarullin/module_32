@@ -26,19 +26,21 @@
         
     }
     .h1, h1 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
+        font-size: 24px;
     }  
     .h2, h2 {
-        font-size: 1rem;
+        /* font-size: 1rem; */
+        font-size: 16px;
     }
     .logo,
     .menu {
         grid-row: 1 / 2;
     }
-    .img {
+    .present__img {
         grid-row: 3 / 4;
     }
-    .design {
+    .present__design {
         grid-row: 4 / 5;
    }
     .text {
@@ -67,17 +69,17 @@
     .logo,
     .menu,
     .present,
-    .img,
+    .present__img,
     .about_me,
-    .design,
+    .present__design,
     .text,
     .project {
         display: grid;
         grid-template-columns: 1fr;
         grid-column: 1 / 2;
     }
-    .design p,
-    .design h1,
+    .present__design p,
+    .present__design h1,
     .text h2,
     .text p  {
         width: auto;
@@ -126,10 +128,12 @@
         
     }
     .h1, h1 {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
+        font-size: 24px;
     }  
     .h2, h2 {
-        font-size: 1rem;
+        /* font-size: 1rem; */
+        font-size: 16px;
     }
     .logo,
     .menu {
@@ -163,17 +167,17 @@
     .logo,
     .menu,
     .present,
-    .img,
+    .present__img,
     .about_me,
-    .design,
+    .present__design,
     .text,
     .project {
         display: grid;
         grid-template-columns: 1fr;
         grid-column: 1 / 2;
     }
-    .design p,
-    .design h1,
+    .present__design p,
+    .present__design h1,
     .text h2,
     .text p  {
         grid-column: 1 / 2;
